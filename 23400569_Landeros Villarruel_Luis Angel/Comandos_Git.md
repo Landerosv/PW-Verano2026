@@ -42,6 +42,8 @@ Descarga y fusiona los cambios del repositorio remoto en tu rama local (equivale
 Caso de uso: Se utiliza para actualizar cambios a tu versión local
 ### 9. git fetch
  Descarga los cambios del repositorio remoto pero sin fusionarlos, permitiéndote revisarlos primero.
+
+Caso de uso: Se utiliza para ver que cambios hay en el remoto antes de integrarlos.
 ### 10. git branch
 Lista, crea o elimina ramas del repositorio.
 
@@ -60,11 +62,34 @@ Integra los cambios de una rama en otra, preservando el historial completo.
 Caso de uso: Se utiliza para unificar ramas con main.
 ### 14. git rebase
 Reaplica los commits de una rama sobre otra, creando un historial lineal y más limpio.
+
+Caso de uso: Se utiliza para integrar cambios de main en alguna rama sin crear un commit de fusión extra.
 ### 15. git log
+Muestra el historial completo de commits de la rama actual (hash, autor, fecha, mensaje).
+
+Caso de uso: Se utiliza para saber quién hizo un cambio y cuándo.
 ### 16. git diff
+Muestra las diferencias entre estados del repositorio: directorio de trabajo, staging area, commits o ramas.
+
+Caso de uso: Se utiliza antes de hacer commit para revisar exactamente qué líneas se cambiaron.
 ### 17. git reset
+Deshace commits moviéndose a un estado anterior. Tiene tres modos: 
+
+git reset --soft HEAD    # deshace el commit, conserva los cambios en staging
+
+git reset --mixed HEAD   # deshace el commit, saca los cambios del staging
+
+git reset --hard HEAD    # deshace el commit y elimina los cambios por completo
+
+Caso de uso: Se utiliza cuando Hiciste un commit con errores y necesitas deshacerlo.
 ### 18. git stash
+Guarda temporalmente los cambios no confirmados y deja el directorio limpio en el último commit.
+
+Caso de uso: Se utiliza cuando se necesita cambiar de rama pero sin perder el trabajo en curso.
 ### 19. git stash pop
+Recupera los últimos cambios guardados con stash y los aplica al directorio actual.
+
+Caso de uso: Se utiliza para volver a alguna rama y retomar el trabajo que se había guardado.
 ### 20. git clean
  Elimina archivos sin rastrear del directorio de trabajo (los que Git no está siguiendo).
 
