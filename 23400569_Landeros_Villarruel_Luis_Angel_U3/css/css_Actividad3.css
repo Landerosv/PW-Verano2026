@@ -1,0 +1,112 @@
+body {
+    background-color: #f0faff;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #03045e;
+}
+
+h1, h2, h3 {
+    color: white;
+    background: #0077b6;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px;
+}
+
+hr {
+    border: 2px solid #90e0ef;
+}
+
+p {
+    text-align: justify;
+    line-height: 22px;
+}
+
+a {
+    color: #023e8a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #00b4d8;
+}
+
+ul, ol {
+    background-color: #caf0f8;
+    border-radius: 20px;
+    padding: 15px 40px;
+    line-height: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+img {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 119, 182, 0.4);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+}
+
+table {
+    margin: auto;
+    width: 90%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    background: #0077b6;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #90e0ef;
+}
+
+fieldset {
+    border: 2px solid #0077b6;
+    border-radius: 15px;
+    padding: 20px;
+    width: 85%;
+    margin: 20px auto;
+}
+
+legend {
+    font-weight: bold;
+    color: #023e8a;
+    padding: 0 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    border-radius: 6px;
+    border: 1px solid #90e0ef;
+    padding: 5px;
+}
+
+input[type="button"] {
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="button"]:hover {
+    background-color: #023e8a;
+}
