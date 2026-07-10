@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login X</title>
+    <style>
+        .contenedor{
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+            gap: 100px;              
+            height: 100vh;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+        .login{
+            color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width:350px;
+        }
+        .botones{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            border: none;
+            border-radius: 30px;
+            padding-inline: 45px;
+            padding-block: 8px;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+        .login a{
+           color: rgb(48, 124, 223);
+           text-decoration: none;
+        }
+        .terminos{
+         color: gray;
+        }
+        .separador{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+            margin: 20px 0;
+        }
+        .separador hr{
+            flex:1;
+            border: none;
+            border-top: 1px solid #555;
+        }
+        .login span{
+            color: white;
+        }
+        .logo{
+            width:400px;
+        }
+        .login h1{
+            font-size:40px;
+        }
+
+
+
+    @media (max-width: 768px){
+
+    .contenedor{
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+        height: auto;
+    }
+    .logo{
+        width:120px;
+    }
+    .login h1{
+        font-size:40px;
+    }
+
+    .botones{
+        width:100%;
+    }
+    
+    .login{
+        width:100%;
+        max-width:350px;
+    }
+
+    } /*fin del media*/
+
+    </style>
+</head>
+<body style="background-color: black;">
+    <header></header>
+    <nav></nav>
+    <main>
+        <section class="contenedor">
+            <div>
+                <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/X_icon.svg/960px-X_icon.svg.png">
+            </div>
+            <div class="login">
+                <h1 style="margin-bottom: 0;">Lo que está <br> pasando ahora</h1>
+                <h2 style="margin-bottom: 15px; margin-top: 20px;">Únete Hoy</h2>
+                
+                <button class="botones">
+                    <img width="25" src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google">
+                    <strong>Registrarse con Google</strong>
+                </button>
+                <button class="botones">
+                    <img width="20" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg">
+                    <strong>Registrarse con Apple</strong>
+                </button>
+                <div class="separador">
+                    <hr>
+                    <span><strong>O</strong></span>
+                    <hr>
+                </div>
+                <button style="color: white; background: rgb(48, 124, 223);" class="botones">
+                   <strong>Crear Cuenta</strong>
+                </button>
+                <div style="font-size: 14px;" class="terminos">
+                Al registrarse aceptas los <a> Términos de servicio</a> y la <br>
+                 <a>politica de privacidad</a> incluida la politica de Uso de Cookies.
+                </div>
+                <span style="padding-top: 40px;">¿Ya tienes una cuenta?</span>
+                <button class="botones" style="background: black; color: rgb(48, 124, 223); border:1px solid #555; margin-bottom: 40px;">
+                    Iniciar Sesión
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>
