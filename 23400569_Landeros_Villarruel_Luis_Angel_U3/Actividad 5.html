@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google</title>
+  <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      color: #3c4043;
+    }
+
+    .top-nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 20px 24px;
+    }
+
+    .top-nav__links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .top-nav__links a {
+      text-decoration: none;
+      color: #5f6368;
+      font-size: 14px;
+    }
+
+    .btn-acceder {
+      background-color: #0b57d0;
+      color: #fff !important;
+      padding: 10px 24px;
+      border-radius: 20px;
+      font-weight: 500;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 8vh;
+      padding-inline: 20px;
+    }
+
+    .logo {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 90px;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+    }
+
+    .g1, .g2 { color: #4285f4; }
+    .o1 { color: #ea4335; }
+    .o2 { color: #fbbc05; }
+    .l1 { color: #34a853; }
+    .e1 { color: #ea4335; }
+
+    .search-form {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .search-box {
+      width: 100%;
+      padding: 18px 24px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      outline: none;
+      color: #3c4043;
+    }
+
+    .search-box::placeholder {
+      color: #9aa0a6;
+    }
+
+    .search-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn-search,
+    .btn-lucky {
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      border-radius: 4px;
+      color: #3c4043;
+      font-size: 14px;
+      padding: 12px 18px;
+      cursor: pointer;
+    }
+
+    .btn-search:hover,
+    .btn-lucky:hover {
+      border-color: #dadce0;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .site-footer {
+      background-color: #f2f2f2;
+      font-size: 15px;
+    }
+
+    .footer-top {
+      padding: 15px 24px;
+      border-bottom: 1px solid #dadce0;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 15px 24px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      text-decoration: none;
+      color: #3c4043;
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        font-size: 70px;
+      }
+
+      .main-content {
+        padding-top: 6vh;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .top-nav__links {
+        gap: 14px;
+      }
+
+      .top-nav__links a {
+        font-size: 13px;
+      }
+
+      .btn-acceder {
+        padding: 8px 16px;
+      }
+
+      .logo {
+        font-size: 54px;
+        margin-bottom: 30px;
+      }
+
+      .search-box {
+        padding: 14px 20px;
+        font-size: 16px;
+      }
+
+      .search-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 260px;
+      }
+
+      .btn-search,
+      .btn-lucky {
+        width: 100%;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 14px;
+      }
+
+      .footer-links {
+        gap: 14px;
+        font-size: 13px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top-nav">
+    <nav class="top-nav__links">
+      <a href="#">Gmail</a>
+      <a href="#">Imágenes</a>
+      <a href="#" class="btn-acceder">Acceder</a>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <h1 class="logo">
+      <span class="g1">G</span><span class="o1">o</span><span class="o2">o</span><span class="g2">g</span><span class="l1">l</span><span class="e1">e</span>
+    </h1>
+
+    <form class="search-form" role="search">
+      <input type="text" class="search-box" placeholder="Ingresa una busqueda..." aria-label="Buscar" />
+    </form>
+
+    <div class="search-buttons">
+      <button type="button" class="btn-search">Buscar con Google</button>
+      <button type="button" class="btn-lucky">Voy a tener suerte</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <span>México</span>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-links footer-links--left">
+        <a href="#">Sobre Google</a>
+        <a href="#">Publicidad</a>
+        <a href="#">Negocios</a>
+        <a href="#">Cómo funciona la Búsqueda</a>
+      </div>
+      <div class="footer-links footer-links--right">
+        <a href="#">Privacidad</a>
+        <a href="#">Condiciones</a>
+        <a href="#">Configuración</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
