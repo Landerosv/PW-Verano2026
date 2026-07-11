@@ -12,6 +12,7 @@
 
   body {
     font-family: 'Roboto', sans-serif;
+    background-color: #000;
   }
 
   .hero {
@@ -137,7 +138,8 @@
 
  .poster {
     position: relative;
-    width: 600px;    
+        width:100%;
+    max-width:800px; 
     margin: 0 auto;    
     border-radius: 6px;
     overflow: hidden;
@@ -192,6 +194,7 @@
     color: #fff;
     padding: 50px 40px 70px;
     text-align: center;
+     overflow-x:auto;
   }
 
   .plans h2 {
@@ -212,6 +215,7 @@
     margin: 0 auto;
     border-collapse: collapse;
     text-align: center;
+    min-width:700px;
   }
 
   .plans-table th,
@@ -290,12 +294,12 @@
    .anywhere {
     background-color: #06070f;
     color: #fff;
-    padding: 60px 40px;
+    padding:40px 20px;
     text-align: center;
   }
 
   .anywhere h2 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 800;
     margin-bottom: 10px;
   }
@@ -318,6 +322,175 @@
   .feet hr{
     border-color: #000;
   }
+
+  @media (max-width:768px){
+
+  .hero{
+    height:auto;
+    min-height:100vh;
+    padding:25px 20px 40px;
+  }
+
+  .top-bar{
+    justify-content:center;
+  }
+
+  .hero-content{
+    max-width:100%;
+    margin-top:60px;
+    text-align:center;
+  }
+
+  .hero-content h1{
+    font-size:28px;
+  }
+
+  .hero-content img{
+    max-width:220px;
+  }
+
+  .subscribe-box{
+    flex-direction:column;
+    gap:12px;
+    max-width:100%;
+  }
+
+  .subscribe-box input,
+  .subscribe-box button{
+    width:100%;
+    padding:15px;
+  }
+
+  .brands{
+    justify-content:center;
+  }
+
+
+  .solo-disney,
+  .top10,
+  .plans,
+  .sports,
+  .anywhere{
+    padding:40px 20px;  
+  }
+
+  .solo-disney h2,
+  .plans h2,
+  .sports h2,
+  .anywhere h2{
+    font-size:26px;
+  }
+
+  .poster{
+    width:100%;
+  }
+
+  .poster .caption{
+    left:20px;
+    font-size:22px;
+  }
+
+
+  .top10-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+  }
+
+  .top-item{
+    width:100%;
+  }
+
+
+  .plans{
+    overflow-x:auto;
+  }
+
+  .plans-table{
+    min-width:700px;
+  }
+
+
+  .sports-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+
+  .anywhere img{
+    width:100%;
+  }
+
+  }
+
+
+@media (max-width:480px){
+
+.hero{
+    padding:20px 15px 35px;
+}
+
+.hero-content{
+    margin-top:40px;
+}
+
+.hero-content h1{
+    font-size:22px;
+    line-height:1.4;
+}
+
+.hero-content img{
+    width:180px;
+}
+
+.login-btn{
+    width:100%;
+}
+
+.subscribe-box input,
+.subscribe-box button{
+    font-size:14px;
+}
+
+.solo-disney,
+.top10,
+.plans,
+.sports,
+.anywhere{
+    padding:30px 15px;
+}
+
+.solo-disney h2,
+.plans h2,
+.sports h2,
+.anywhere h2{
+    font-size:22px;
+}
+
+.solo-disney p,
+.plans p,
+.sports p,
+.anywhere p{
+    font-size:14px;
+}
+
+.poster .caption{
+    left:12px;
+    font-size:16px;
+}
+
+.top10-grid{
+    grid-template-columns:1fr;
+}
+
+.sports-grid{
+    grid-template-columns:1fr;
+}
+
+.feet{
+    font-size:12px;
+}
+
+}
 
 </style>
 </head>
@@ -391,6 +564,8 @@
 </section>
 
 <section class="plans">
+  <h2>¿Qué plan vas a elegir?</h2>
+  <p>Podrás modificarlo o cancelarlo cuando quieras.</p>
   <table class="plans-table">
     <thead>
       <tr>
